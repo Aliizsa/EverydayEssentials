@@ -349,7 +349,7 @@ p {
 .categories,
 .featured-products,
 .testimonials {
-    padding: 7rem 2rem;
+    padding: 6rem 2rem;
 }
 
 .categories,
@@ -363,7 +363,7 @@ p {
 
 .section-heading {
     max-width: 720px;
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.75rem;
     text-align: center;
 }
 
@@ -376,8 +376,9 @@ p {
    CATEGORY CARDS
    ------------------------------ */
 .category-image {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
+    background: var(--cream);
 }
 
 .category-image img {
@@ -391,20 +392,22 @@ p {
     transform: scale(1.035);
 }
 .category-grid {
-    max-width: var(--max-width);
+    max-width: 1200px;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .category-card {
     background: var(--white);
-    box-shadow: var(--shadow);
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    box-shadow: none;
+    transition: transform 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
 }
 
 .category-card:hover {
@@ -431,17 +434,19 @@ p {
 }
 
 .category-card-content {
-    padding: 1.6rem;
+    padding: 1rem 0.25rem 0;
+    text-align: center;
 }
 
 .category-card-content h3 {
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.35rem;
+    font-size: 1.35rem;
 }
 
 .category-link {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     color: var(--lavender-dark);
 }
 
