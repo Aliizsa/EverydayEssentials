@@ -1,1 +1,518 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
 
+    <title>Everyday Essentials</title>
+
+    <meta
+        name="description"
+        content="Everyday Essentials offers self-care products for body, hair, skin, and grooming."
+    >
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- Temporary text logo until final logo artwork is available -->
+            <a href="index.html" class="brand">
+                <span class="brand-name">Everyday Essentials</span>
+            </a>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="#for-him">For Him</a>
+                <a href="#for-her">For Her</a>
+                <a href="#personal-care">Personal Care</a>
+                <a href="#shop">Shop Now</a>
+            </nav>
+
+            <!-- Future cart button -->
+            <div class="header-actions">
+                <a href="#shop" class="cart-link" aria-label="Shopping cart">
+                    Cart
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-image-placeholder">
+                <span>Hero Image Coming Soon</span>
+            </div>
+
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+                    Everyday Self-Care
+                </p>
+
+                <h1>
+                    Brand New
+                </h1>
+
+                <p class="hero-sale">
+                    Up to 40% Off Retail
+                </p>
+
+                <p class="hero-description">
+                    Thoughtfully selected essentials for body, hair,
+                    skin, and everyday care.
+                </p>
+
+                <a href="#shop" class="button button-primary">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Shop By Category -->
+        <section class="categories" id="personal-care">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">Explore</p>
+                <h2>Shop By Category</h2>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#body-care" class="category-card">
+
+                    <div class="category-image-placeholder">
+                        <span>Body Care</span>
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Body Care</h3>
+                        <span class="category-link">Shop Collection</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#hair-care" class="category-card">
+
+                    <div class="category-image-placeholder">
+                        <span>Hair Care</span>
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Hair Care</h3>
+                        <span class="category-link">Shop Collection</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#skincare" class="category-card">
+
+                    <div class="category-image-placeholder">
+                        <span>Skincare</span>
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Skincare</h3>
+                        <span class="category-link">Shop Collection</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#grooming" class="category-card">
+
+                    <div class="category-image-placeholder">
+                        <span>Grooming</span>
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Grooming</h3>
+                        <span class="category-link">Shop Collection</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Products -->
+        <section class="featured-products" id="shop">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">Customer Favorites</p>
+                <h2>Featured Products</h2>
+
+                <p>
+                    A few everyday essentials worth discovering.
+                </p>
+            </div>
+
+
+            <div class="product-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card" id="body-care">
+
+                    <div class="product-image-placeholder">
+                        <span>Product Image</span>
+
+                        <span class="sale-badge">
+                            Sale
+                        </span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Body Care
+                        </p>
+
+                        <h3>
+                            Moisturizing Body Wash
+                        </h3>
+
+                        <div class="product-price">
+                            <span class="old-price">$18.00</span>
+                            <span class="sale-price">$12.00</span>
+                        </div>
+
+                        <a href="#" class="button button-secondary">
+                            View Product
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article class="product-card" id="hair-care">
+
+                    <div class="product-image-placeholder">
+                        <span>Product Image</span>
+
+                        <span class="sale-badge">
+                            Sale
+                        </span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Hair Care
+                        </p>
+
+                        <h3>
+                            Nourishing Shampoo
+                        </h3>
+
+                        <div class="product-price">
+                            <span class="old-price">$20.00</span>
+                            <span class="sale-price">$14.00</span>
+                        </div>
+
+                        <a href="#" class="button button-secondary">
+                            View Product
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article class="product-card" id="skincare">
+
+                    <div class="product-image-placeholder">
+                        <span>Product Image</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Skincare
+                        </p>
+
+                        <h3>
+                            Daily Facial Cleanser
+                        </h3>
+
+                        <div class="product-price">
+                            <span class="sale-price">$16.00</span>
+                        </div>
+
+                        <a href="#" class="button button-secondary">
+                            View Product
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article class="product-card" id="grooming">
+
+                    <div class="product-image-placeholder">
+                        <span>Product Image</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Grooming
+                        </p>
+
+                        <h3>
+                            Everyday Deodorant
+                        </h3>
+
+                        <div class="product-price">
+                            <span class="sale-price">$10.00</span>
+                        </div>
+
+                        <a href="#" class="button button-secondary">
+                            View Product
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- For Her / For Him -->
+        <section class="collection-callouts">
+
+            <div class="collection-card" id="for-her">
+
+                <div class="collection-image-placeholder">
+                    <span>For Her</span>
+                </div>
+
+                <div class="collection-content">
+                    <p class="section-eyebrow">Shop The Collection</p>
+                    <h2>For Her</h2>
+
+                    <a href="#shop" class="text-link">
+                        Explore Products
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="collection-card" id="for-him">
+
+                <div class="collection-image-placeholder">
+                    <span>For Him</span>
+                </div>
+
+                <div class="collection-content">
+                    <p class="section-eyebrow">Shop The Collection</p>
+                    <h2>For Him</h2>
+
+                    <a href="#shop" class="text-link">
+                        Explore Products
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    Kind Words
+                </p>
+
+                <h2>
+                    What Customers Are Saying
+                </h2>
+            </div>
+
+
+            <div class="testimonial-grid">
+
+                <blockquote class="testimonial-card">
+
+                    <p>
+                        “Everything arrived beautifully packaged,
+                        and I absolutely loved the products.”
+                    </p>
+
+                    <footer>
+                        — Customer Name
+                    </footer>
+
+                </blockquote>
+
+
+                <blockquote class="testimonial-card">
+
+                    <p>
+                        “Great quality, great prices, and such a
+                        lovely small business to support.”
+                    </p>
+
+                    <footer>
+                        — Customer Name
+                    </footer>
+
+                </blockquote>
+
+
+                <blockquote class="testimonial-card">
+
+                    <p>
+                        “I found several new favorites and will
+                        definitely be ordering again.”
+                    </p>
+
+                    <footer>
+                        — Customer Name
+                    </footer>
+
+                </blockquote>
+
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter / Contact -->
+        <section class="newsletter">
+
+            <div class="newsletter-inner">
+
+                <div>
+                    <p class="section-eyebrow">
+                        Stay Connected
+                    </p>
+
+                    <h2>
+                        Everyday care, delivered.
+                    </h2>
+
+                    <p>
+                        Join the list for new products, restocks,
+                        special offers, and shop updates.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+
+                    <label for="newsletter-email" class="sr-only">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        name="email"
+                        placeholder="Your email address"
+                    >
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+                        Sign Up
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="brand-name">
+                    Everyday Essentials
+                </span>
+
+                <p>
+                    Self-care for everyday life.
+                </p>
+
+            </div>
+
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+
+                <a href="index.html">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#for-her">For Her</a>
+                <a href="#for-him">For Him</a>
+                <a href="#personal-care">Personal Care</a>
+
+            </nav>
+
+
+            <div class="footer-contact">
+
+                <p>
+                    everydayessentials.boutique
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="copyright-year"></span>
+                Everyday Essentials. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
