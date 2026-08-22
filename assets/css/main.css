@@ -291,6 +291,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
@@ -312,6 +315,7 @@ p {
 .hero-image {
     min-height: 680px;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-image img {
@@ -319,6 +323,23 @@ p {
     height: 100%;
     min-height: 680px;
     object-fit: cover;
+}
+
+/* Soft fade from photo into the cream text panel */
+.hero-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to right,
+        rgba(245, 239, 231, 0),
+        var(--cream)
+    );
 }
 
 /* ------------------------------
