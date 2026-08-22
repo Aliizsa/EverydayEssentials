@@ -560,26 +560,94 @@ p {
 }
 
 /* ------------------------------
-   COLLECTION CALLOUTS
+   PROMO SECTION
    ------------------------------ */
 
-.collection-callouts {
+.promo-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.15fr 0.85fr;
+    min-height: 560px;
 }
 
-.collection-card {
+
+/* Shared cards */
+
+.promo-card {
     position: relative;
-    min-height: 580px;
     overflow: hidden;
 }
 
-.collection-image-placeholder {
+
+/* Body Care image panel */
+
+.promo-image-card {
+    min-height: 560px;
+}
+
+.promo-image-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.promo-image-card:hover img {
+    transform: scale(1.025);
+}
+
+.promo-image-card::after {
+    content: "";
     position: absolute;
     inset: 0;
 
-    display: grid;
-    place-items: center;
+    background: linear-gradient(
+        to top,
+        rgba(20, 20, 20, 0.55),
+        rgba(20, 20, 20, 0.05) 55%,
+        transparent
+    );
+}
+
+
+/* Text over body-care image */
+
+.promo-overlay {
+    position: absolute;
+    left: clamp(2rem, 5vw, 5rem);
+    bottom: clamp(2rem, 5vw, 4rem);
+    z-index: 2;
+}
+
+.promo-overlay .section-eyebrow {
+    color: var(--lavender-soft);
+}
+
+.promo-overlay h2 {
+    margin: 0.35rem 0 1rem;
+    color: var(--white);
+}
+
+.promo-link {
+    display: inline-block;
+
+    color: var(--white);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding-bottom: 0.25rem;
+}
+
+
+/* Sale panel */
+
+.promo-sale-card {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
 
     background:
         linear-gradient(
@@ -587,36 +655,50 @@ p {
             var(--lavender-soft),
             var(--cream)
         );
-
-    color: var(--gray);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
 }
 
-.collection-card:nth-child(2)
-.collection-image-placeholder {
-    background:
-        linear-gradient(
-            145deg,
-            #e2ddd7,
-            #c8bfd0
-        );
+.promo-sale-content {
+    max-width: 520px;
+    padding: clamp(3rem, 6vw, 6rem);
 }
 
-.collection-content {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
-    right: 2rem;
-
-    padding: 2rem;
-
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(6px);
+.promo-sale-content h2 {
+    margin: 0.5rem 0 1.25rem;
+    font-size: clamp(2.4rem, 4vw, 4rem);
 }
 
-.collection-content h2 {
-    margin-top: 0.4rem;
+.promo-sale-content p {
+    max-width: 420px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .promo-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+    .promo-section {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-image-card,
+    .promo-image-card img,
+    .promo-sale-card {
+        min-height: 460px;
+    }
+
 }
 
 
