@@ -178,9 +178,8 @@ p {
    HEADER
    ------------------------------ */
 .site-logo {
-    width: 230px;
-    height: auto;
-    max-height: 52px;
+    width: auto;
+    height: 230px;
 }
 .site-header {
     background: var(--cream-light);
